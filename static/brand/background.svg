@@ -1,0 +1,29 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" width="1326"  height="909" >
+<title>gradient diagonal</title>
+<defs>
+<linearGradient id="r" y1="1">
+<stop offset="0" stop-color="#f00">
+<animate attributeName="stop-color" values="red; #ff0; #0f0; cyan; blue; #f0f; red" dur="7s" fill="freeze" repeatDur="indefinite"/>
+</stop>
+<stop offset="0.2857" stop-color="#ff0">
+<animate attributeName="stop-color" values="#ff0; #0f0; cyan; blue; #f0f; red; #ff0" dur="7s" fill="freeze" repeatDur="indefinite"/>
+</stop>
+<stop offset="0.4286" stop-color="#0f0">
+<animate attributeName="stop-color" values="#0f0; cyan; blue; #f0f; red; #ff0; #0f0" dur="7s" fill="freeze" repeatDur="indefinite"/>
+</stop>
+<stop offset="0.5714" stop-color="cyan">
+<animate attributeName="stop-color" values="cyan; blue; #f0f; red; #ff0; #0f0; cyan" dur="7s" fill="freeze" repeatDur="indefinite"/>
+</stop>
+<stop offset="0.7142" stop-color="blue">
+<animate attributeName="stop-color" values="blue; #f0f; red; #ff0; #0f0; cyan; blue" dur="7s" fill="freeze" repeatDur="indefinite"/>
+</stop>
+<stop offset="0.8571" stop-color="#f0f">
+<animate attributeName="stop-color" values="#f0f; red; #ff0; #0f0; cyan; blue; #f0f" dur="7s" fill="freeze" repeatDur="indefinite"/>
+</stop>
+<stop offset="1" stop-color="red">
+<animate attributeName="stop-color" values="red; #ff0; #0f0; cyan; blue; #f0f; red" dur="7s" fill="freeze" repeatDur="indefinite"/>
+</stop>
+</linearGradient>
+</defs>
+<rect width="100%" height="100%" fill="url(#r)"/>
+</svg>

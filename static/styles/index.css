@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --spr-rose: #ff0060;
+  --spr-green: #00dfa2;
+  --spr-blue: #0079ff;
+  --join-prim: #ffd700;
+  /* --join-sec: #fb8b24; */
+  --text-dimmed: rgba(255, 255, 255, 0.75);
+}
+
+body {
+  color: #fff;
+  background-image: url(../brand/background.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.bg-overlay {
+  background-color: rgba(0, 0, 0, 0.85);
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 5rem;
+  padding: 5rem;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.branding img {
+  height: 7rem;
+}
+
+.branding p {
+  margin-top: 2.5rem;
+  font-size: 1.25rem;
+  line-height: 1.7;
+}
+
+.join-button {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1.5rem;
+  border: 0.25rem solid var(--join-prim);
+  /*
+  border-left-color: var(--join-sec);
+  border-bottom-color: var(--join-sec);
+  */
+  border-radius: 0.75rem;
+  transition: opacity 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+
+.join-button:hover {
+  opacity: 0.8;
+  transform: scale(0.98);
+}
+
+.join-button i {
+  font-size: 2.5rem;
+  margin-right: 1.5rem;
+}
+
+.join-button span {
+  font-weight: 600;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: inset 0 0 0 0.25rem var(--buttonColor);
+  border-radius: 0.75rem;
+  padding: 3rem;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.links a:hover {
+  opacity: 0.8;
+  transform: scale(0.98);
+}
+
+.links a i {
+  display: block;
+  font-size: 8rem;
+  color: var(--buttonColor);
+}
+
+.links a h2 {
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+.links a p {
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: var(--text-dimmed);
+}
+
+.links a:nth-child(1) {
+  --buttonColor: var(--spr-rose);
+}
+
+.links a:nth-child(2) {
+  --buttonColor: var(--spr-green);
+}
+
+.links a:nth-child(3) {
+  --buttonColor: var(--spr-blue);
+}
+
+.links a:nth-child(4) {
+  --buttonColor: #fff;
+}
+
+@media (max-width: 1200px) {
+  main {
+    padding: 3rem 2rem;
+  }
+
+  .join-button {
+    padding: 1.25rem;
+  }
+
+  .join-button span {
+    font-size: 1.5rem;
+  }
+
+  .join-button i {
+    font-size: 1.75rem;
+  }
+
+  .links {
+    grid-template-columns: 1fr;
+  }
+
+  .links a {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .links a h2 {
+    font-size: 1.5rem;
+  }
+
+  .links a p {
+    font-size: 1rem;
+  }
+}
